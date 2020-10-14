@@ -1,0 +1,73 @@
+/* COMMON */
+.body__container {
+    position: relative;
+}
+
+/* INNER */
+.inner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* BUTTON */
+.btn {
+    padding: 15px 30px;
+    border-radius: 8px;
+    background: #43bff0;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    border: 1px solid #111;
+    text-shadow: -1px -1px 1px #333;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #6fd6ff;
+}
+
+/* NAVIGATION */
+nav {
+    width: 100%;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    margin: 10px 5px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 8px;
+    transition: .5s;
+}
+
+nav ul li a:hover {
+    background: rgb(58, 58, 58);
+}
+
+/* USER CARD */
+section .section--user-card .inner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 150px 0;
+}
+
+section .section--user-card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
