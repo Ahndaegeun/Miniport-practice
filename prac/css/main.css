@@ -1,0 +1,122 @@
+/* COMMON */
+* {
+    box-sizing: border-box;
+}
+.body__container {
+    position: relative;
+}
+
+/* INNER & SECTION */
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+
+.section {
+    position: relative;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+/* BUTTON */
+.btn {
+    padding: 20px 50px;
+    border-radius: 8px;
+    background: #43bff0;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    border: 1px solid #111;
+    text-shadow: -1px -1px 1px #333;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #6fd6ff;
+}
+
+/* SUMMARY */
+.summary {
+    text-align: center;
+}
+
+.summary__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.summary__description {
+    font-size: 18px;
+    font-weight: 300;
+    color: #888;
+    line-height: 1.7;
+}
+
+/* TEXT & LINK */
+.text--bold {
+    font-weight: bold;
+    color: #111;
+}
+
+.link--underline {
+    border-bottom: 2px solid #888;
+}
+
+/* HEADER */
+.section--header .top-nav {
+    position: relative;
+    height: 70px;
+}
+
+.section--header .top-nav ul {
+    background: #282828;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.section--header .top-nav ul li a {
+    display: block;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 10px 15px;
+    transition: .5s;
+}
+
+.section--header .top-nav ul li a:hover {
+    background: #444;
+}
+
+.section--header .inner .user-card {
+    display: flex;
+}
+
+.section--header .user-card img {
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.section--header .summary {
+    text-align: start;
+}
+
+.section--header .summary__title {
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.section--header .summary__description {
+    font-size: 25px;
+    margin-bottom: 60px;
+}
