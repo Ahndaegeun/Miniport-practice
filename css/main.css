@@ -63,6 +63,12 @@
 
 .link--underline {
     border-bottom: 2px solid #888;
+    transition: .5s;
+}
+
+.link--underline:hover {
+    border-color: rgb(105, 255, 255);
+    color: rgb(105, 255, 255);
 }
 
 /* HEADER */
@@ -79,6 +85,7 @@
     right: 0;
     display: flex;
     justify-content: center;
+    z-index: 9999;
 }
 
 .section--header .top-nav ul li a {
@@ -119,4 +126,93 @@
 .section--header .summary__description {
     font-size: 25px;
     margin-bottom: 60px;
+}
+
+/* CONTENTS */
+.section--contents .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section--contents .summary__title {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.section--contents .summary__description {
+    font-size: 25px;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+.section--contents .img-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section--contents .img-card .summary {
+    border: 1px solid rgb(206, 206, 206);
+    width: 30%;
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+.section--contents .img-card img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.section--contents .img-card .summary__title {
+    font-size: 25px;
+}
+
+.section--contents .img-card .summary__description {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+/* MEMORI */
+.section--memori .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section--memori .summary__title {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.section--memori .summary__description {
+    font-size: 25px;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+.section--memori .img-card {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+}
+
+.section--memori .img-card .summary {
+    border: 1px solid rgb(206, 206, 206);
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+.section--memori .img-card img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.section--memori .img-card .summary__title {
+    font-size: 25px;
+}
+
+.section--memori .img-card .summary__description {
+    font-size: 16px;
+    margin-bottom: 0;
 }
