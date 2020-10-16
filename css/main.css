@@ -1,18 +1,26 @@
 /* COMMON */
+* {
+    box-sizing: border-box;
+}
 .body__container {
     position: relative;
 }
 
-/* INNER */
+/* INNER & SECTION */
 .inner {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+
+.section {
+    position: relative;
+    border-bottom: 1px solid rgb(201, 201, 201);
 }
 
 /* BUTTON */
 .btn {
-    padding: 15px 30px;
+    padding: 20px 50px;
     border-radius: 8px;
     background: #43bff0;
     display: inline-block;
@@ -29,45 +37,86 @@
     background: #6fd6ff;
 }
 
-/* NAVIGATION */
-nav {
-    width: 100%;
-    background: #000;
+/* SUMMARY */
+.summary {
+    text-align: center;
+}
+
+.summary__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.summary__description {
+    font-size: 18px;
+    font-weight: 300;
+    color: #888;
+    line-height: 1.7;
+}
+
+/* TEXT & LINK */
+.text--bold {
+    font-weight: bold;
+    color: #111;
+}
+
+.link--underline {
+    border-bottom: 2px solid #888;
+}
+
+/* HEADER */
+.section--header .top-nav {
+    position: relative;
+    height: 70px;
+}
+
+.section--header .top-nav ul {
+    background: #282828;
     position: fixed;
     top: 0;
     left: 0;
-}
-
-nav ul {
+    right: 0;
     display: flex;
     justify-content: center;
 }
 
-nav ul li a {
+.section--header .top-nav ul li a {
     display: block;
-    padding: 10px 15px;
-    margin: 10px 5px;
     color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
     font-size: 20px;
-    font-weight: 900;
-    border-radius: 8px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 10px 15px;
     transition: .5s;
 }
 
-nav ul li a:hover {
-    background: rgb(58, 58, 58);
+.section--header .top-nav ul li a:hover {
+    background: #444;
 }
 
-/* USER CARD */
-section .section--user-card .inner {
+.section--header .inner .user-card {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 150px 0;
 }
 
-section .section--user-card img {
+.section--header .user-card img {
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    margin-right: 50px;
+}
+
+.section--header .summary {
+    text-align: start;
+}
+
+.section--header .summary__title {
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.section--header .summary__description {
+    font-size: 25px;
+    margin-bottom: 60px;
 }
