@@ -40,6 +40,7 @@
 /* SUMMARY */
 .summary {
     text-align: center;
+    position: relative;
 }
 
 .summary__title {
@@ -178,41 +179,150 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
 }
 
-.section--memori .summary__title {
+.section--memori .summary .summary__title {
     font-size: 40px;
     margin-bottom: 25px;
 }
 
-.section--memori .summary__description {
+.section--memori .summary .summary__description {
     font-size: 25px;
     font-weight: 100;
-    margin-bottom: 50px;
-}
-
-.section--memori .img-card {
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-}
-
-.section--memori .img-card .summary {
-    border: 1px solid rgb(206, 206, 206);
-    padding: 50px;
     margin-bottom: 30px;
 }
 
-.section--memori .img-card img {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 10px;
+.section--memori .img-card .inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.section--memori .img-card .summary__title {
-    font-size: 25px;
+.section--memori .img-card .picture-card {
+    border: 1px solid rgb(197, 197, 197);
+    margin-right: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.section--memori .img-card .picture-card:last-child {
+    margin-right: 0;
+}
+
+.section--memori .img-card a img {
+    margin-bottom: 30px;
+}
+
+.section--memori .img-card .summary__title a {
+    transition: .3s;
+}
+
+.section--memori .img-card .summary__title a:hover {
+    color: rgb(79, 255, 255);
 }
 
 .section--memori .img-card .summary__description {
-    font-size: 16px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
+}
+
+.section--memori .inner .summary__description.last {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.section--memori .btn {
+    margin-bottom: 100px;
+}
+
+/* CONNECT */
+.section--connect {
+    background-color: #333;
+}
+
+.section--connect .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section--connect .connect-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section--connect .connect-top .summary__title {
+    color: #fff;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.section--connect .connect-top .summary__description {
+    margin-bottom: 40px;
+}
+
+.section--connect .connect-top form {
+    display: grid;
+    width: 1000px;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "name name email email"
+        "subject subject subject subject"
+        "message message message message"
+        ". b-btn n-btn .";
+    border-bottom: 2px solid #222;
+    margin-bottom: 50px;
+}
+
+.section--connect .connect-top form * {
+    border-radius: 10px;
+    background-color: #222;
+    outline: none;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+
+.section--connect .connect-top form [type="id"] {
+    grid-area: name;
+    margin-right: 20px;
+}
+.section--connect .connect-top form [type="email"] { grid-area: email; }
+.section--connect .connect-top form [type="address"] { grid-area: subject; }
+.section--connect .connect-top form [type="text"] { grid-area: message; }
+.section--connect .connect-top form [type="submit"] { 
+    grid-area: b-btn; 
+    margin-right: 20px;
+}
+.section--connect .connect-top form [type="reset"] { grid-area: n-btn; }
+
+.section--connect .connect-mid {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #222;
+    height: 150px;
+    width: 1000px;
+}
+
+.section--connect .connect-mid .footer__title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.section--connect footer ul {
+    display: flex;
+    justify-content: center;
+    color: #999;
+    width: 1000px;
+}
+
+.section--connect footer ul li:first-child {
+    margin-right: 20px;
+}
+
+.section--connect footer ul li:nth-child(2) {
+    margin-right: 20px;
 }
